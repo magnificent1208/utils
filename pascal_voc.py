@@ -82,7 +82,10 @@ def process_voc_xml(data_dir, output_dir):
         image_name = tree.find("filename").text
         width = int(tree.findall("./size/width")[0].text)
         height = int(tree.findall("./size/height")[0].text)
-        depth = int(tree.findall("./size/depth")[0].text)
+        if tree.find("./size/channel") != None :
+            depth = int(tree.findall("./size/channel")[0].text)
+        else:
+            depth = int(tree.findall("./size/depth")[0].text)
         image_path = os.path.join(data_dir, "JPEGImages", image_name)
 
         writer = Writer(image_path, width, height, depth=depth)
