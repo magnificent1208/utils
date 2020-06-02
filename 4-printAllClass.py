@@ -8,6 +8,7 @@ list = os.listdir(rootdir) #列出文件夹下所有的目录与文件
 ## 空列表
 classes_list = [] 
 for i in range(0,len(list)):
+   print(list[i])
    path = os.path.join(rootdir,list[i])
    if os.path.isfile(path):   
       #打开xml文档
