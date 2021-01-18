@@ -1,0 +1,26 @@
+<annotation verified="yes">
+  <folder>demo</folder>
+  <filename>demo</filename>
+  <path>/Users/haoyou/Codes/labelImg/demo/demo.png</path>
+ <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>741</width>
+    <height>350</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>1</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <Difficult>0</Difficult>
+    <bndbox>
+      <xmin>259</xmin>
+      <ymin>77</ymin>
+      <xmax>320</xmax>
+      <ymax>272</ymax>
+    </bndbox>
+  </object>
+</annotation>
